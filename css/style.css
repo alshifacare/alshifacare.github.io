@@ -75,8 +75,11 @@ nav a:hover{
 }
 
 .hero-left p{
-    font-size:20px;
+    font-family:'Noto Nastaliq Urdu', serif;
+    font-size:22px;
+    line-height:2;
     margin-bottom:20px;
+}
 }
 
 .price{
@@ -145,7 +148,12 @@ nav{
 }
 
 .hero-left h1{
-    font-size:34px;
+    font-family:'Noto Nastaliq Urdu', serif;
+    font-size:48px;
+    line-height:2;
+    color:#145A32;
+    margin-bottom:25px;
+}
 }
 
 .hero-left h2{
