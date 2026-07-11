@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7faf7;
+    color:#222;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo img{
+    height:70px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#145A32;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#1E7D4D;
+}
+
+.language button{
+    padding:8px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#1E7D4D;
+    color:white;
+    margin-left:8px;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    gap:40px;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:46px;
+    color:#145A32;
+    margin-bottom:20px;
+}
+
+.hero-left h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.hero-left p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.price{
+    margin:25px 0;
+}
+
+.old{
+    text-decoration:line-through;
+    color:#888;
+    font-size:22px;
+    margin-right:15px;
+}
+
+.new{
+    color:#d62828;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.button{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+}
+
+.hero-right{
+    width:45%;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:420px;
+}
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin:20px 0;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+    text-align:center;
+}
+
+.hero-left h1{
+    font-size:34px;
+}
+
+.hero-left h2{
+    font-size:30px;
+}
+
+.new{
+    font-size:34px;
+}
+
+}
