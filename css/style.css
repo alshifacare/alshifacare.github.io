@@ -164,4 +164,136 @@ nav{
     font-size:34px;
 }
 
+}.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+background:#f8faf8;
+gap:60px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.offer{
+display:inline-block;
+background:#145A32;
+color:#fff;
+padding:8px 18px;
+border-radius:30px;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.hero-text h1{
+font-size:50px;
+color:#145A32;
+line-height:1.4;
+margin-bottom:20px;
+}
+
+.hero-text h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:22px;
+color:#555;
+margin-bottom:25px;
+}
+
+.price{
+margin-bottom:30px;
+}
+
+.old-price{
+text-decoration:line-through;
+font-size:24px;
+color:#888;
+margin-right:15px;
+}
+
+.new-price{
+font-size:42px;
+font-weight:bold;
+color:#d62828;
+}
+
+.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:16px 30px;
+border-radius:10px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+.whatsapp-btn:hover{
+background:#1ebc59;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:450px;
+}header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.logo img{
+    height:75px;
+}
+
+nav a{
+    position:relative;
+    text-decoration:none;
+    color:#145A32;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#145A32;
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#1f7a45;
+}.hero-text h1{
+    font-family:'Noto Nastaliq Urdu', serif;
+}
+
+body.urdu{
+    font-family:'Noto Nastaliq Urdu', serif;
+}
+
+body.english{
+    font-family:'Poppins', sans-serif;
 }
