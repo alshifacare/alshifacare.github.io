@@ -1,134 +1,423 @@
+/* ==========================
+   RESET
+========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f7faf7;
-    color:#222;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f6faf6;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    background:#ffffff;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
     position:sticky;
     top:0;
     z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 7%;
+
+    background:#ffffff;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .logo img{
-    height:70px;
+    height:72px;
 }
 
 nav{
     display:flex;
-    gap:25px;
+    gap:35px;
 }
 
 nav a{
     text-decoration:none;
     color:#145A32;
     font-weight:600;
+    font-size:18px;
+    transition:.3s;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+    height:2px;
+
+    background:#1E7D4D;
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
 }
 
 nav a:hover{
     color:#1E7D4D;
 }
 
+/* ==========================
+   LANGUAGE BUTTONS
+========================== */
+
+.language{
+    display:flex;
+    gap:10px;
+}
+
 .language button{
-    padding:8px 15px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+
     background:#1E7D4D;
     color:white;
-    margin-left:8px;
-}
 
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:70px 8%;
-    gap:40px;
-}
+    border:none;
 
-.hero-left{
-    width:60%;
-}
+    padding:10px 18px;
 
-.hero-left h1{
-    font-size:46px;
-    color:#145A32;
-    margin-bottom:20px;
-}
+    border-radius:8px;
 
-.hero-left h2{
-    font-size:38px;
-    margin-bottom:10px;
-}
+    cursor:pointer;
 
-.hero-left p{
-    font-family:'Noto Nastaliq Urdu', serif;
-    font-size:22px;
-    line-height:2;
-    margin-bottom:20px;
-}
-}
-
-.price{
-    margin:25px 0;
-}
-
-.old{
-    text-decoration:line-through;
-    color:#888;
-    font-size:22px;
-    margin-right:15px;
-}
-
-.new{
-    color:#d62828;
-    font-size:42px;
-    font-weight:bold;
-}
-
-.button{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:15px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:18px;
     font-weight:600;
+
     transition:.3s;
 }
 
-.button:hover{
-    transform:translateY(-3px);
+.language button:hover{
+
+    background:#145A32;
+
 }
 
-.hero-right{
-    width:40%;
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:60px 8%;
+
+    min-height:auto;
+
+    background:linear-gradient(135deg,#f9fcf8,#eef8ef);
+
+}
+
+.hero-text{
+
+    flex:1.5;
+    max-width:700px;
+
+}
+
+.hero-image{
+
+    flex:0.5;
+
     text-align:center;
+
 }
 
-.hero-right img{
+.hero-image img{
+
     width:100%;
-    max-width:420px;
+
+    max-width:360px;
+disply:block;
+    
+
+}/* ===========================
+   HERO TEXT
+=========================== */
+
+.hero-text h1{
+    font-family:'Noto Nastaliq Urdu', serif;
+    font-size:36px;
+    color:#145A32;
+    line-height:1.6;
+    margin:10px 0 20px;
 }
 
-@media(max-width:900px){
+.hero-text h2{
+    font-size:58px;
+    color:#145A32;
+    font-weight:700;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.hero-text p{
+    font-family:'Noto Nastaliq Urdu', serif;
+    font-size:24px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.offer{
+    display:inline-block;
+    background:#145A32;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* ===========================
+   PRICE
+=========================== */
+
+.price{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin:35px 0;
+}
+
+.old-price{
+    font-size:30px;
+    color:#888;
+    text-decoration:line-through;
+}
+
+.new-price{
+    font-size:56px;
+    color:#d62828;
+    font-weight:bold;
+}
+
+/* ===========================
+   WHATSAPP BUTTON
+=========================== */
+
+.whatsapp-btn{
+
+    display:inline-block;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:18px 34px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    box-shadow:0 12px 25px rgba(37,211,102,.35);
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#1EBE57;
+
+}
+
+/* ===========================
+   PRODUCT IMAGE
+=========================== */
+
+.hero-image img{
+
+    max-width:500px;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.04);
+
+}/* ===== FEATURES ===== */
+
+.features{
+
+    padding:90px 8%;
+
+    background:#ffffff;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#145A32;
+
+    margin-bottom:60px;
+
+    font-family:'Noto Nastaliq Urdu', serif;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#f8fbf8;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card h3{
+
+    margin:18px 0;
+
+    color:#145A32;
+
+    font-size:24px;
+
+}
+
+.feature-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}/*==========================
+WHY DERMAHEAL
+===========================*/
+
+.why-dermaheal{
+
+    padding:90px 8%;
+
+    background:#f5faf6;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title span{
+
+    color:#1E7D4D;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+.section-title h2{
+
+    font-family:'Noto Nastaliq Urdu', serif;
+
+    font-size:42px;
+
+    color:#145A32;
+
+    margin-top:15px;
+
+}
+
+.intro-box{
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.intro-box p{
+
+    font-size:22px;
+
+    line-height:2.2;
+
+    margin-bottom:25px;
+
+    text-align:justify;
+
+}@media (max-width:768px){
 
 header{
     flex-direction:column;
+    padding:15px;
 }
 
 nav{
@@ -139,161 +428,297 @@ nav{
 
 .hero{
     flex-direction:column;
-}
-
-.hero-left,
-.hero-right{
-    width:100%;
     text-align:center;
 }
 
-.hero-left h1{
-    font-family:'Noto Nastaliq Urdu', serif;
-    font-size:48px;
-    line-height:2;
-    color:#145A32;
-    margin-bottom:25px;
-}
-}
-
-.hero-left h2{
-    font-size:30px;
-}
-
-.new{
-    font-size:34px;
-}
-
-}.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px 8%;
-background:#f8faf8;
-gap:60px;
+.hero-image{
+    order:1;
 }
 
 .hero-text{
-flex:1;
-}
-
-.offer{
-display:inline-block;
-background:#145A32;
-color:#fff;
-padding:8px 18px;
-border-radius:30px;
-font-size:15px;
-margin-bottom:20px;
-}
-
-.hero-text h1{
-font-size:50px;
-color:#145A32;
-line-height:1.4;
-margin-bottom:20px;
+    order:2;
 }
 
 .hero-text h2{
-font-size:42px;
-margin-bottom:10px;
+    font-size:42px;
+}
+
+.hero-text h1{
+    font-size:28px;
 }
 
 .hero-text p{
-font-size:22px;
-color:#555;
-margin-bottom:25px;
+    font-size:20px;
 }
 
 .price{
-margin-bottom:30px;
+    justify-content:center;
 }
 
-.old-price{
-text-decoration:line-through;
-font-size:24px;
-color:#888;
-margin-right:15px;
+.feature-grid{
+    grid-template-columns:1fr;
 }
 
-.new-price{
-font-size:42px;
-font-weight:bold;
-color:#d62828;
+}/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    padding:15px;
+
 }
 
-.whatsapp-btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:16px 30px;
-border-radius:10px;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-transition:.3s;
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin:15px 0;
+
 }
 
-.whatsapp-btn:hover{
-background:#1ebc59;
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:30px;
+
 }
 
 .hero-image{
-flex:1;
-text-align:center;
+
+    order:1;
+
 }
 
-.hero-image img{
-width:100%;
-max-width:450px;
-}header{
-    position:sticky;
-    top:0;
-    left:0;
+.hero-text{
+
+    order:2;
+
+    max-width:100%;
+
+}
+
+.hero-text h2{
+
+    font-size:40px;
+
+}
+
+.hero-text h1{
+
+    font-size:28px;
+
+    line-height:1.7;
+
+}
+
+.hero-text p{
+
+    font-size:20px;
+
+}
+
+.price{
+
+    justify-content:center;
+
+}
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.intro-box{
+
+    padding:25px;
+
+}
+
+.intro-box p{
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+.whatsapp-btn{
+
     width:100%;
-    background:rgba(255,255,255,0.95);
-    backdrop-filter:blur(10px);
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    z-index:999;
+
+    text-align:center;
+
 }
 
-.logo img{
-    height:75px;
-}
+}/*=========================
+FOOTER
+=========================*/
 
-nav a{
-    position:relative;
-    text-decoration:none;
-    color:#145A32;
-    font-weight:600;
-    transition:.3s;
-}
+.footer{
 
-nav a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0%;
-    height:2px;
     background:#145A32;
+
+    color:white;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.footer h3{
+
+    font-size:28px;
+
+    margin-bottom:10px 0;
+
+}
+
+.footer p{
+
+    font-size:17px;
+
+    margin:6px 0;
+    line-height:1.6;
+
+}
+
+.footer-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 28px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.footer-btn:hover{
+
+    background:#1EBE5D;
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    opacity:.8;
+
+    font-size:14px;
+
+}.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:34px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    z-index:9999;
     transition:.3s;
 }
 
-nav a:hover::after{
-    width:100%;
+.floating-whatsapp:hover{
+    transform:scale(1.1);
 }
 
-nav a:hover{
-    color:#1f7a45;
-}.hero-text h1{
-    font-family:'Noto Nastaliq Urdu', serif;
+@media(max-width:768px){
+
+.floating-whatsapp{
+    width:58px;
+    height:58px;
+    font-size:30px;
+    right:15px;
+    bottom:15px;
 }
 
-body.urdu{
-    font-family:'Noto Nastaliq Urdu', serif;
+}/* Floating WhatsApp */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:38px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:all .3s ease;
 }
 
-body.english{
-    font-family:'Poppins', sans-serif;
+.floating-whatsapp:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
+
+@media(max-width:768px){
+
+.floating-whatsapp{
+    width:58px;
+    height:58px;
+    font-size:34px;
+    right:15px;
+    bottom:15px;
+}
+
+}@keyframes pulse{
+
+0%{
+    transform:scale(1);
+}
+
+50%{
+    transform:scale(1.08);
+}
+
+100%{
+    transform:scale(1);
+}
+
+}
+
+.floating-whatsapp{
+    animation:pulse 2s infinite;
 }
