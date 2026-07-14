@@ -152,7 +152,9 @@ nav a:hover{
     width:100%;
 
     max-width:360px;
-disply:block;
+border-radius:18px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
     
 
 }/* ===========================
