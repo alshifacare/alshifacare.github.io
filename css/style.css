@@ -396,14 +396,18 @@ WHY DERMAHEAL
 
 .section-title span{
 
+    display:block;
+
     color:#1E7D4D;
 
     letter-spacing:3px;
 
     font-weight:700;
+
     margin-bottom:35px;
 
 }
+
 
 .section-title h2{
 
@@ -413,7 +417,7 @@ WHY DERMAHEAL
 
     color:#145A32;
 
-    margin-top:45px;
+    margin-top:0;
 
 }
 
