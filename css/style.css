@@ -487,6 +487,8 @@ nav{
 .price{
     gap:10px;
     justify-content:center;
+    margin-top:10px;
+    margin-bottom:20px;
 }
 
 .old-price{
