@@ -505,7 +505,11 @@ nav{
     grid-template-columns:1fr;
 
 }
-
+.section-title h2{
+    font-size:28px;
+    line-height:1.7;
+}
+}
 }/* ==========================
    MOBILE RESPONSIVE
 ========================== */
