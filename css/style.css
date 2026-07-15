@@ -630,6 +630,15 @@ nav{
     text-align:center;
 
 }
+.section-title h2{
+
+    font-size:24px !important;
+
+    line-height:1.6;
+
+    margin-top:8px;
+
+}
 
 }/*=========================
 FOOTER
