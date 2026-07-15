@@ -472,32 +472,36 @@ nav{
     font-size:28px;
 }
 
+.hero-text h2{
+    font-size:42px;
+}
+
+.hero-text h1{
+    font-size:28px;
+}
+
 .hero-text p{
     font-size:20px;
-    .price{
-
-    gap:10px;
-
-}
-
-.old-price{
-
-    font-size:22px;
-
-}
-
-.new-price{
-
-    font-size:38px;
-
 }
 
 .price{
+    gap:10px;
     justify-content:center;
+}
+
+.old-price{
+    font-size:22px;
+    white-space:nowrap;
+}
+
+.new-price{
+    font-size:38px;
+    white-space:nowrap;
 }
 
 .feature-grid{
     grid-template-columns:1fr;
+
 }
 
 }/* ==========================
