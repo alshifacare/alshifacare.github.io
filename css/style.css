@@ -230,12 +230,14 @@ border-radius:18px;
     font-size:30px;
     color:#888;
     text-decoration:line-through;
+    white-space: nowrap;
 }
 
 .new-price{
     font-size:56px;
     color:#d62828;
     font-weight:bold;
+    white-space: nowrap;
 }
 
 /* ===========================
