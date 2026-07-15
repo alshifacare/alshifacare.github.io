@@ -406,9 +406,9 @@ WHY DERMAHEAL
 
 .section-title h2{
 
-    font-family:'Noto Nastaliq Urdu', serif;
+    font-family:'MehrNastaliq', serif;
 
-    font-size:42px;
+    font-size:36px;
 
     color:#145A32;
 
@@ -580,8 +580,8 @@ nav{
 
 }
 .section-title h2{
-
-    font-size:24px !important;
+font-family:'MehrNastaliq', serif;
+    font-size:22px !important;
 
     line-height:1.6;
 
