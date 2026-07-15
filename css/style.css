@@ -33,6 +33,7 @@ body{
 ========================== */
 
 header{
+
     position:sticky;
     top:0;
     z-index:1000;
@@ -41,10 +42,12 @@ header{
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 7%;
+    padding:15px 7%;
 
-    background:#ffffff;
+    background:linear-gradient(90deg,#D9F0DD,#BFE3C4);
+
     box-shadow:0 8px 25px rgba(0,0,0,.08);
+
 }
 
 .logo img{
@@ -194,7 +197,7 @@ border-radius:18px;
 }
 
 .hero-text p{
-    font-family:'MehrNastaliq', serif;
+     font-family:'MehrNastaliq', serif;
     font-size:26px;
     line-height:2;
     color:#555;
