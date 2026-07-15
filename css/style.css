@@ -474,6 +474,22 @@ nav{
 
 .hero-text p{
     font-size:20px;
+    .price{
+
+    gap:10px;
+
+}
+
+.old-price{
+
+    font-size:22px;
+
+}
+
+.new-price{
+
+    font-size:42px;
+
 }
 
 .price{
