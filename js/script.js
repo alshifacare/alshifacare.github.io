@@ -8,6 +8,10 @@ function applyLanguage(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ur" ? "rtl" : "ltr";
     document.body.dir = lang === "ur" ? "rtl" : "ltr";
+    document.body.classList.toggle("lang-en", lang === "en");
+    document.body.classList.toggle("lang-ur", lang === "ur");
+    document.documentElement.classList.toggle("lang-en", lang === "en");
+    document.documentElement.classList.toggle("lang-ur", lang === "ur");
 
     translatableElements.forEach((element) => {
         const text = lang === "ur" ? element.dataset.ur : element.dataset.en;
