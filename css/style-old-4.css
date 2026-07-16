@@ -31,14 +31,14 @@ body{
 @font-face{
 
     font-family:'MehrNastaliq';
-    src:url('../Fonts/MehrNastaliq.ttf') format('truetype');
+    src:url('../fonts/Mehr_Nastaliq_Web.ttf') format('truetype');
 
 }
 
 @font-face{
 
     font-family:'Alvi Nastaleeq';
-    src:url('../Fonts/Alvi Nastaleeq Regular.ttf') format('truetype');
+    src:url('../fonts/Alvi Nastaleeq.ttf') format('truetype');
 
 }
 
@@ -47,24 +47,6 @@ body{
     width:100%;
     max-width:1250px;
     margin:auto;
-
-}
-
-/* =========================
-   GLOBAL FONT RULES
-   Headings -> MehrNastaliq
-   Paragraphs -> Alvi Nastaleeq
-========================= */
-
-h1, h2, h3, h4, h5, h6{
-
-    font-family:'MehrNastaliq', serif;
-
-}
-
-p{
-
-    font-family:'Alvi Nastaleeq', serif;
 
 }
 
@@ -219,7 +201,7 @@ nav a:hover{
 
 .hero-text h1{
 
-    font-family:'MehrNastaliq',serif;
+    font-family:'Alvi Nastaleeq',serif;
 
     font-size:34px;
 

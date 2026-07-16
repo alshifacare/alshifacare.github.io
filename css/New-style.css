@@ -31,14 +31,14 @@ body{
 @font-face{
 
     font-family:'MehrNastaliq';
-    src:url('../Fonts/MehrNastaliq.ttf') format('truetype');
+    src:url('../fonts/Mehr_Nastaliq_Web.ttf') format('truetype');
 
 }
 
 @font-face{
 
     font-family:'Alvi Nastaleeq';
-    src:url('../Fonts/Alvi Nastaleeq Regular.ttf') format('truetype');
+    src:url('../fonts/Alvi Nastaleeq.ttf') format('truetype');
 
 }
 
@@ -47,24 +47,6 @@ body{
     width:100%;
     max-width:1250px;
     margin:auto;
-
-}
-
-/* =========================
-   GLOBAL FONT RULES
-   Headings -> MehrNastaliq
-   Paragraphs -> Alvi Nastaleeq
-========================= */
-
-h1, h2, h3, h4, h5, h6{
-
-    font-family:'MehrNastaliq', serif;
-
-}
-
-p{
-
-    font-family:'Alvi Nastaleeq', serif;
 
 }
 
@@ -219,7 +201,7 @@ nav a:hover{
 
 .hero-text h1{
 
-    font-family:'MehrNastaliq',serif;
+    font-family:'Alvi Nastaleeq',serif;
 
     font-size:34px;
 
@@ -233,7 +215,7 @@ nav a:hover{
 
 .hero-text p{
 
-    font-family:'Alvi Nastaleeq', serif;
+    font-family:'MehrNastaliq',serif;
 
     font-size:25px;
 
@@ -614,15 +596,13 @@ FOOTER
 
 }
 
-.footer h3{
+.footer p{
 
-    font-family:'Poppins', sans-serif;
+    font-size:18px;
 
-    font-size:32px;
+    line-height:1.9;
 
-    font-weight:700;
-
-    margin-bottom:15px;
+    margin:8px 0;
 
 }
 
@@ -658,24 +638,11 @@ FOOTER
 
 }
 
-
-.footer-btn:hover{
-
-    background:#1EBE57;
-
-    transform:translateY(-4px);
-
-}
-
 .copyright{
-
-    font-family:'Alvi Nastaleeq', serif;
 
     margin-top:30px;
 
-    font-size:18px;
-
-    line-height:2;
+    font-size:15px;
 
     opacity:.85;
 
@@ -965,13 +932,7 @@ nav a{
 
 .feature-card p{
 
-    font-family:'Alvi Nastaleeq', serif;
-
-    font-size:20px;
-
-    line-height:2;
-
-    color:#666;
+    font-size:17px;
 
 }
 
@@ -1005,15 +966,7 @@ nav a{
 
 .footer p{
 
-    font-family:'Alvi Nastaleeq', serif;
-
-    font-size:20px;
-
-    line-height:2;
-
-    color:#ffffff;
-
-    margin:8px 0;
+    font-size:16px;
 
 }
 
