@@ -652,21 +652,6 @@ TESTIMONIALS
 
 }
 
-.video-link-caption{
-    text-align:center;
-    margin:10px 0 14px;
-}
-
-.video-link-caption a{
-    color:#145A32;
-    font-weight:600;
-    text-decoration:none;
-}
-
-.video-link-caption a:hover{
-    text-decoration:underline;
-}
-
 .video-title{
 
     font-family:'MehrNastaliq',serif;
