@@ -647,7 +647,24 @@ TESTIMONIALS
     width:90%;
     display:block;
     margin:0 auto;
+    border-radius:12px;
+    background:#f4f4f4;
 
+}
+
+.video-link-caption{
+    text-align:center;
+    margin:10px 0 14px;
+}
+
+.video-link-caption a{
+    color:#145A32;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.video-link-caption a:hover{
+    text-decoration:underline;
 }
 
 .video-title{
@@ -970,6 +987,25 @@ nav a{
 
     gap:35px;
 
+}
+
+body.lang-en .hero,
+body.lang-en .hero-text,
+body.lang-en .section-title,
+body.lang-en .intro-box p,
+body.lang-en .footer,
+body.lang-en .footer-content,
+body.lang-en .footer h3,
+body.lang-en .footer p,
+body.lang-en .copyright {
+    text-align:center;
+}
+
+body.lang-en .hero-text h1,
+body.lang-en .hero-text h2,
+body.lang-en .section-title h2,
+body.lang-en .section-title span {
+    text-align:center;
 }
 
 .hero-image{
