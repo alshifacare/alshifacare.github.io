@@ -553,6 +553,17 @@ TESTIMONIALS
 
 }
 
+.video-title{
+
+    font-family:'MehrNastaliq',serif;
+    font-size:24px;
+    color:#145A32;
+    text-align:center;
+    margin:16px 0 12px;
+    font-weight:normal;
+
+}
+
 .video-card iframe{
 
     width:100%;
