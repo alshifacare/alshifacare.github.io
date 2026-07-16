@@ -1025,6 +1025,21 @@ nav a{
 
 }
 
+.hero-text,
+.hero-text .offer,
+.hero-text h1,
+.hero-text h2,
+.hero-text p,
+.hero-text .price,
+.hero-text .whatsapp-btn,
+.section-title,
+.section-title span,
+.section-title h2,
+.intro-box,
+.intro-box > p {
+    text-align:center !important;
+}
+
 body.lang-en .hero,
 body.lang-en .hero-text,
 body.lang-en .section-title,
@@ -1155,6 +1170,7 @@ body.lang-en .section-title span {
     font-size:19px;
 
     line-height:2.1;
+    text-align:center !important;
 
 }
 
@@ -1364,6 +1380,7 @@ SMALL MOBILE
     .intro-box p{
         font-size:17px;
         line-height:1.9;
+        text-align:center !important;
     }
 
     .feature-card{
