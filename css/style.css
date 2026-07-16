@@ -101,6 +101,16 @@ body.lang-en .section-title span {
 }
 
 html[dir="rtl"] .hero-text,
+html[dir="rtl"] .hero-text .offer,
+html[dir="rtl"] .hero-text h1,
+html[dir="rtl"] .hero-text h2,
+html[dir="rtl"] .hero-text p,
+html[dir="rtl"] .hero-text .price,
+html[dir="rtl"] .hero-text .whatsapp-btn,
+html[dir="rtl"] .section-title,
+html[dir="rtl"] .section-title span,
+html[dir="rtl"] .section-title h2,
+html[dir="rtl"] .intro-box,
 html[dir="rtl"] .intro-box p,
 html[dir="rtl"] .feature-card h3,
 html[dir="rtl"] .feature-card p,
@@ -109,7 +119,7 @@ html[dir="rtl"] .video-card .video-fallback,
 html[dir="rtl"] .footer-content h3,
 html[dir="rtl"] .footer-content p,
 html[dir="rtl"] .copyright {
-    text-align: right;
+    text-align: center;
 }
 
 html[dir="ltr"] .hero-text,
@@ -122,6 +132,27 @@ html[dir="ltr"] .footer-content h3,
 html[dir="ltr"] .footer-content p,
 html[dir="ltr"] .copyright {
     text-align: left;
+}
+
+.hero-text,
+.hero-text .offer,
+.hero-text h1,
+.hero-text h2,
+.hero-text p,
+.hero-text .price,
+.hero-text .whatsapp-btn,
+.section-title,
+.section-title span,
+.section-title h2,
+.intro-box,
+.intro-box p,
+.intro-box p span,
+.intro-box p strong {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* =========================
@@ -255,7 +286,22 @@ nav a:hover{
 .hero-text{
 
     flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center !important;
 
+}
+
+.hero-text .price{
+    justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero-text .whatsapp-btn{
+    margin:0 auto;
 }
 
 .hero-image{
@@ -497,6 +543,7 @@ INTRO BOX
     border-radius:18px;
 
     box-shadow:0 18px 45px rgba(0,0,0,.08);
+    text-align:center;
 
 }
 
@@ -510,10 +557,14 @@ INTRO BOX
 
     line-height:2.2;
 
-    text-align:inherit;
+    text-align:right;
 
     margin-bottom:22px;
 
+}
+
+.intro-box > p{
+    text-align:right !important;
 }
 
 /*=========================
