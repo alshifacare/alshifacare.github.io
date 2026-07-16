@@ -509,15 +509,15 @@ TESTIMONIALS
 .testimonial-grid{
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:35px;
     margin-top:60px;
+    align-items:start;
 
 }
 
-.testimonial-grid > .video-card:only-child{
+.testimonial-grid > .video-card{
 
-    grid-column:1 / -1;
     width:min(100%, 430px);
     margin:0 auto;
 
@@ -1000,7 +1000,7 @@ nav a{
 
 }
 
-.testimonial-grid > .video-card:only-child{
+.testimonial-grid > .video-card{
 
     width:100%;
     max-width:100%;
