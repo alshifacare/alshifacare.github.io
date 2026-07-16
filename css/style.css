@@ -15,6 +15,14 @@ html{
     scroll-behavior:smooth;
 }
 
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="ltr"] body {
+    direction: ltr;
+}
+
 body{
 
     font-family:'Poppins',sans-serif;
@@ -66,6 +74,30 @@ p{
 
     font-family:'Alvi Nastaleeq', serif;
 
+}
+
+html[dir="rtl"] .hero-text,
+html[dir="rtl"] .intro-box p,
+html[dir="rtl"] .feature-card h3,
+html[dir="rtl"] .feature-card p,
+html[dir="rtl"] .video-title,
+html[dir="rtl"] .video-card .video-fallback,
+html[dir="rtl"] .footer-content h3,
+html[dir="rtl"] .footer-content p,
+html[dir="rtl"] .copyright {
+    text-align: right;
+}
+
+html[dir="ltr"] .hero-text,
+html[dir="ltr"] .intro-box p,
+html[dir="ltr"] .feature-card h3,
+html[dir="ltr"] .feature-card p,
+html[dir="ltr"] .video-title,
+html[dir="ltr"] .video-card .video-fallback,
+html[dir="ltr"] .footer-content h3,
+html[dir="ltr"] .footer-content p,
+html[dir="ltr"] .copyright {
+    text-align: left;
 }
 
 /* =========================
@@ -437,7 +469,7 @@ INTRO BOX
 
     line-height:2.2;
 
-    text-align:right;
+    text-align:inherit;
 
     margin-bottom:22px;
 

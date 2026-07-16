@@ -6,6 +6,8 @@ const translatableElements = document.querySelectorAll("[data-ur][data-en]");
 
 function applyLanguage(lang) {
     document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ur" ? "rtl" : "ltr";
+    document.body.dir = lang === "ur" ? "rtl" : "ltr";
 
     translatableElements.forEach((element) => {
         const text = lang === "ur" ? element.dataset.ur : element.dataset.en;
