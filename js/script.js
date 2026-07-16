@@ -2,36 +2,42 @@
 
 const urduBtn = document.getElementById("urduBtn");
 const englishBtn = document.getElementById("englishBtn");
+const translatableElements = document.querySelectorAll("[data-ur][data-en]");
 
-const heading = document.querySelector(".hero-left h1");
-const product = document.querySelector(".hero-left h2");
-const subtitle = document.querySelector(".hero-left p");
-const orderBtn = document.querySelector(".button");
+function applyLanguage(lang) {
+    document.documentElement.lang = lang;
+
+    translatableElements.forEach((element) => {
+        const text = lang === "ur" ? element.dataset.ur : element.dataset.en;
+        element.innerHTML = text;
+    });
+
+    document.title = lang === "ur"
+        ? "AlShifaCare | DermaHeal Homeopathic & Herbal Package"
+        : "AlShifaCare | DermaHeal Homeopathic & Herbal Package";
+
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+        metaDescription.setAttribute(
+            "content",
+            lang === "ur"
+                ? "DermaHeal by AlShifaCare is a Homeopathic & Herbal package containing herbal powder and homeopathic tablets. Order directly through WhatsApp anywhere in Pakistan."
+                : "DermaHeal by AlShifaCare is a homeopathic and herbal package containing herbal powder and homeopathic tablets. Order directly through WhatsApp anywhere in Pakistan."
+        );
+    }
+
+    urduBtn.classList.toggle("active", lang === "ur");
+    englishBtn.classList.toggle("active", lang === "en");
+    urduBtn.setAttribute("aria-pressed", String(lang === "ur"));
+    englishBtn.setAttribute("aria-pressed", String(lang === "en"));
+}
 
 urduBtn.addEventListener("click", function () {
-
-    document.documentElement.lang = "ur";
-
-    heading.innerHTML = "قدرتی انداز میں جلد کی بہتر نگہداشت";
-
-    product.innerHTML = "DermaHeal";
-
-    subtitle.innerHTML = "ہومیوپیتھک اور ہربل پیکیج";
-
-    orderBtn.innerHTML = "واٹس ایپ پر آرڈر کریں";
-
+    applyLanguage("ur");
 });
 
 englishBtn.addEventListener("click", function () {
-
-    document.documentElement.lang = "en";
-
-    heading.innerHTML = "Natural Support For Healthy Skin";
-
-    product.innerHTML = "DermaHeal";
-
-    subtitle.innerHTML = "Homeopathic & Herbal Package";
-
-    orderBtn.innerHTML = "Order on WhatsApp";
-
+    applyLanguage("en");
 });
+
+applyLanguage("ur");

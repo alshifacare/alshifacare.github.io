@@ -107,6 +107,30 @@ nav{
 
 }
 
+.language{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.language button{
+    border:1px solid #145A32;
+    background:#fff;
+    color:#145A32;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.language button.active,
+.language button:hover{
+    background:#145A32;
+    color:#fff;
+}
+
 nav a{
 
     text-decoration:none;
