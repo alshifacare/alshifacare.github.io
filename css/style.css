@@ -431,7 +431,7 @@ FEATURES
 
     gap:30px;
 
-    margin-top:65px;
+    margin-top:70px;
 
 }
 
@@ -500,8 +500,9 @@ TESTIMONIALS
 
 .testimonials{
 
-    padding:35px 0 20px;
+    padding:35px 0 28px;
     background:#ffffff;
+    margin-top:10px;
 
 }
 
@@ -517,7 +518,7 @@ TESTIMONIALS
 .testimonial-grid > .video-card:only-child{
 
     grid-column:1 / -1;
-    width:min(100%, 760px);
+    width:min(100%, 430px);
     margin:0 auto;
 
 }
@@ -546,8 +547,9 @@ TESTIMONIALS
 
 .video-card video{
 
-    width:100%;
+    width:90%;
     display:block;
+    margin:0 auto;
 
 }
 
