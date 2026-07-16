@@ -749,10 +749,23 @@ FLOATING WHATSAPP
 
 .floating-whatsapp:hover{
 
-    transform:scale(1.08);
+    transform:scale(1.08) translateY(-3px);
 
     background:#1EBE57;
 
+}
+
+.floating-whatsapp{
+    animation:floatPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes floatPulse{
+    0%, 100% {
+        transform: translateY(0px) scale(1);
+    }
+    50% {
+        transform: translateY(-6px) scale(1.03);
+    }
 }
 
 
@@ -1019,13 +1032,19 @@ nav a{
 
     width:100%;
     max-width:100%;
+    margin:0 auto;
 
 }
 
 .video-card video{
 
     height:auto;
+    width:100%;
 
+}
+
+.video-card:first-child .video-title{
+    margin-top:10px;
 }
 
 .video-card iframe{
