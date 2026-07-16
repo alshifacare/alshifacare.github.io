@@ -559,9 +559,13 @@ TESTIMONIALS
     font-size:24px;
     color:#145A32;
     text-align:center;
-    margin:16px 0 12px;
+    margin:10px 0 12px;
     font-weight:normal;
 
+}
+
+.video-card:first-child .video-title{
+    margin-top:8px;
 }
 
 .video-card iframe{
