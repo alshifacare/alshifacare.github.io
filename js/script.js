@@ -47,3 +47,12 @@ englishBtn.addEventListener("click", function () {
 });
 
 applyLanguage("ur");
+
+// ---------- TikTok Contact Event Tracking ----------
+document.querySelectorAll(".whatsapp-btn, .floating-whatsapp").forEach((button) => {
+    button.addEventListener("click", function () {
+        if (typeof ttq !== "undefined") {
+            ttq.track("Contact");
+        }
+    });
+});
