@@ -1034,7 +1034,7 @@ header{
 
     flex-direction:column;
     justify-content:flex-start;
-    align-items:flex-start;
+    align-items:flex-end;
 
     padding:18px 20px;
 
@@ -1051,8 +1051,8 @@ header{
 
 .logo{
 
-    margin-top:8px;
-    margin-left:-10px;
+    margin-top:0px;
+    margin-left:0px;
 
 }
 
