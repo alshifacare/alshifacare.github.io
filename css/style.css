@@ -1058,7 +1058,7 @@ header{
 
 nav{
 
-    gap:20px;
+    gap:28px;
     flex-wrap:nowrap;
     justify-content:center;
 
@@ -1074,16 +1074,16 @@ nav a{
     flex-wrap:nowrap;
     justify-content:center;
     gap:6px;
-    margin-left:-15px;
+    margin-left:-30px;
 }
 
 .language button{
-    padding:5px 10px;
-    font-size:12px;
+    padding:4px 8px;
+    font-size:11px;
 }
 
 .nav-strip{
-    padding:10px 3%;
+    padding:6px 3%;
 }
 
 /* HERO */
