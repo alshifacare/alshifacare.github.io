@@ -167,7 +167,7 @@ header{
 
     display:flex;
     justify-content:flex-start;
-    align-items:center;
+    align-items:flex-start;
 
     padding:15px 7%;
 
@@ -229,7 +229,7 @@ header{
 
 .logo img{
 
-    height:90px;
+    height:110px;
     display:block;
 
     filter:
