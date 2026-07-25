@@ -171,9 +171,7 @@ header{
 
     padding:15px 7%;
 
-    background:
-        linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
-        url('../images/clinic-1.jpeg') center/cover no-repeat;
+    background:url('../images/clinic-1.jpeg') center/cover no-repeat;
 
     position:sticky;
     top:0;
@@ -181,6 +179,8 @@ header{
     z-index:9999;
 
     box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    direction:ltr;
 
 }
 
@@ -1036,13 +1036,14 @@ header{
 
     padding:18px 20px;
 
+    min-height:120px;
+
 }
 
 .logo img{
 
     height:80px;
     margin-bottom:12px;
-min-height:120px;
 
 }
 
