@@ -163,13 +163,17 @@ header{
 
     width:100%;
 
+    min-height:180px;
+
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:center;
 
     padding:15px 7%;
 
-    background:#ffffff;
+    background:
+        linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+        url('../images/clinic-1.jpeg') center/cover no-repeat;
 
     position:sticky;
     top:0;
@@ -177,6 +181,43 @@ header{
     z-index:9999;
 
     box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+.nav-strip{
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 7%;
+
+    background:#145A32;
+
+    position:relative;
+    top:0;
+
+    z-index:9998;
+
+}
+
+.nav-strip nav a{
+
+    color:#ffffff;
+
+}
+
+.nav-strip nav a:hover{
+
+    color:#F5FAF6;
+
+}
+
+.nav-strip nav a::after{
+
+    background:#ffffff;
 
 }
 
