@@ -1058,7 +1058,7 @@ header{
 
 nav{
 
-    gap:10px;
+    gap:20px;
     flex-wrap:nowrap;
     justify-content:center;
 
@@ -1074,6 +1074,7 @@ nav a{
     flex-wrap:nowrap;
     justify-content:center;
     gap:6px;
+    margin-left:-15px;
 }
 
 .language button{
