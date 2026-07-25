@@ -1058,7 +1058,7 @@ header{
 
 .nav-strip{
 
-    padding:8px 4%;
+    padding:8px 2%;
 
     overflow-x:auto;
     -webkit-overflow-scrolling:touch;
@@ -1077,7 +1077,7 @@ header{
 
 nav{
 
-    gap:18px;
+    gap:8px;
     flex-wrap:nowrap;
     justify-content:flex-start;
 
@@ -1087,7 +1087,7 @@ nav{
 
 nav a{
 
-    font-size:15px;
+    font-size:12px;
     white-space:nowrap;
 
 }
@@ -1095,16 +1095,16 @@ nav a{
 .language{
     flex-wrap:nowrap;
     justify-content:flex-start;
-    gap:8px;
+    gap:5px;
     flex-shrink:0;
     margin-left:0px;
-    margin-right:20px;
+    margin-right:10px;
     order:-1;
 }
 
 .language button{
-    padding:6px 12px;
-    font-size:13px;
+    padding:4px 8px;
+    font-size:11px;
     white-space:nowrap;
 }
 
