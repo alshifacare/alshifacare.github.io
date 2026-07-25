@@ -1038,52 +1038,70 @@ header{
 
     padding:18px 20px;
 
-    min-height:120px;
+    min-height:150px;
 
 }
 
 .logo img{
 
-    height:80px;
+    height:75px;
     margin-bottom:12px;
 
 }
 
 .logo{
 
-    margin-top:-27px;
-    margin-right:-20px;
+    margin-top:6px;
+    margin-right:0px;
+
+}
+
+.nav-strip{
+
+    padding:8px 4%;
+
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+
+    justify-content:flex-start;
+
+}
+
+.nav-strip::-webkit-scrollbar{
+
+    display:none;
 
 }
 
 nav{
 
-    gap:36px;
+    gap:18px;
     flex-wrap:nowrap;
-    justify-content:center;
+    justify-content:flex-start;
+
+    flex-shrink:0;
 
 }
 
 nav a{
 
-    font-size:13px;
+    font-size:15px;
+    white-space:nowrap;
 
 }
 
 .language{
     flex-wrap:nowrap;
-    justify-content:center;
-    gap:6px;
-    margin-left:-45px;
+    justify-content:flex-start;
+    gap:8px;
+    flex-shrink:0;
+    margin-left:20px;
 }
 
 .language button{
-    padding:4px 8px;
-    font-size:11px;
-}
-
-.nav-strip{
-    padding:6px 3%;
+    padding:6px 12px;
+    font-size:13px;
+    white-space:nowrap;
 }
 
 /* HERO */
