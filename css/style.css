@@ -1051,8 +1051,8 @@ header{
 
 .logo{
 
-    margin-top:6px;
-    margin-right:0px;
+    margin-top:-5px;
+    margin-right:-6px;
 
 }
 
@@ -1095,7 +1095,9 @@ nav a{
     justify-content:flex-start;
     gap:8px;
     flex-shrink:0;
-    margin-left:20px;
+    margin-left:0px;
+    margin-right:20px;
+    order:-1;
 }
 
 .language button{
