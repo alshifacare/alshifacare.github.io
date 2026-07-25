@@ -225,9 +225,9 @@ header{
 
     background:rgba(255,255,255,0.9);
 
-    padding:8px 20px;
+    padding:4px 10px;
 
-    border-radius:14px;
+    border-radius:10px;
 
     box-shadow:0 8px 20px rgba(0,0,0,.1);
 
@@ -235,7 +235,7 @@ header{
 
 .logo img{
 
-    height:90px;
+    height:45px;
     display:block;
 
 }
