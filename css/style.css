@@ -1058,21 +1058,31 @@ header{
 
 nav{
 
-    gap:18px;
-    flex-wrap:wrap;
+    gap:10px;
+    flex-wrap:nowrap;
     justify-content:center;
 
 }
 
 nav a{
 
-    font-size:16px;
+    font-size:13px;
 
 }
 
 .language{
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     justify-content:center;
+    gap:6px;
+}
+
+.language button{
+    padding:5px 10px;
+    font-size:12px;
+}
+
+.nav-strip{
+    padding:10px 3%;
 }
 
 /* HERO */
