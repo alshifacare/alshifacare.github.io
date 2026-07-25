@@ -1033,8 +1033,8 @@ MOBILE
 header{
 
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    justify-content:flex-start;
+    align-items:flex-start;
 
     padding:18px 20px;
 
@@ -1046,6 +1046,13 @@ header{
 
     height:80px;
     margin-bottom:12px;
+
+}
+
+.logo{
+
+    margin-top:-10px;
+    margin-left:0px;
 
 }
 
